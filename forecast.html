@@ -16,7 +16,7 @@
         <style>
             body {
                 font-family: cursive;
- background-image: url("https://shop.propfactory.co.uk/cdn/shop/products/62644498485830d68cfb8b4a_83478f17-7882-4977-8d16-22b60f3eb068.jpg?v=1687791836");                background-size: cover;
+ background-image: url("https://static9.depositphotos.com/1593759/1168/i/450/depositphotos_11687543-stock-photo-the-sun-above-the-horizon.jpg");                background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 height: 100vh;
@@ -142,6 +142,40 @@
 
                 .units {
                     font-size: 16px;
+                }
+            }
+              @media (max-width: 768px) {
+                body {
+                    /* Adjust the font size and line height for better readability on smaller screens */
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+
+                .weather-app-wrapper {
+                    /* Center the app on smaller screens */
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                .weather-app {
+                    /* Add some padding to the app container on smaller screens */
+                    padding: 10px;
+                }
+
+                .weather-temperature strong {
+                    /* Adjust the temperature font size for smaller screens */
+                    font-size: 40px;
+                }
+
+                .weather-forecast .col-2 {
+                    /* Adjust the width of forecast cards on smaller screens */
+                    flex-basis: 16.66%;
+                    max-width: 16.66%;
+                }
+
+                /* Hide the "Search" button on smaller screens to save space */
+                .col-3 {
+                    display: none;
                 }
             }
         </style>
